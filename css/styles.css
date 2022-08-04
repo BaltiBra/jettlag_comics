@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: white;
+}
+ /*   HEADER TOTAL   */
+.header{
+    background-color: darkslateblue;
+    align-items: center;
+    height: 100px;
+    padding: 0 80px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+.li-head{
+    margin: 40px;
+    list-style: none;
+    float: left;
+}
+.anchor-nav{
+    text-decoration: none;
+    font-family: "Comic Sans MS", sans-serif; 
+    color: rgba(241, 87, 151, 0.548);  
+}
+
+.icon-head{
+    width: 100px;
+    height: 100px;
+}
+
+            /* INDEX MAIN */
+.grid-container{
+    display: grid;
+    margin: 0px;
+    background-color: rgba(0, 255, 255, 0.103);
+    grid-template-columns: 100px 20% 40% 100px;
+    grid-template-rows: auto auto auto auto;
+    justify-content: space-between;
+}
+.cards{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 60px 0;
+    gap: 2em;
+}
+.card{
+    padding-bottom: 2.5em;
+    display: flex;
+    height: 400px;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgba(247, 214, 176, 0);
+    border: 1px solid black;
+    border-radius: 1em;
+    justify-content: center;
+    overflow: hidden;
+}
+.card_img{
+    overflow: hidden;
+    height: 400px;
+    background-image: url(../images/ej1.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 1em 1em 0 0;
+}
+.card_cta{
+    margin-left: 2em;
+    background-color: slateblue;
+    color: white;
+    text-decoration: none;
+    padding: 0.4em 1em;
+    width: 140px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: auto;
+}
+.card_texts{
+    font-size: small;
+    padding: 0.4em;
+}
+
+            /* CONTACTO  */
+.conteiner_grid_contacto{
+    display: grid;
+    grid-template-areas: 
+    'form map map'
+    'form map map' ;
+}
+
+.maps{
+    grid-area: map;
+}
+
+.forms_contactos{
+    grid-area: form;
+}
+     /*    fotter    */
+.icon-wsp{
+    width: 35px;
+    height: 35px;
+}
+
+/* CELULAR  */ 
+@media only screen and (min-width: 0px) and (max-width: 600px){
+    *{
+        margin: 0;
+        padding: 0; 
+        box-sizing: content-box;
+    }
+    .header{
+        background-color: darkslateblue;
+        align-items: center;
+        height: auto;
+        padding: 0 5%;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .icon-head{
+        width: 40px;
+        height: 40px;
+        justify-items: auto;
+    }
+    .nav-ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    .li-head{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+    }
+    .anchor-nav{
+        text-decoration: none;
+        font-family: "Comic Sans MS", sans-serif; 
+        color: rgba(241, 87, 151, 0.548);  
+    }
+    /* MAIN */
+    .grid-container{
+        display: grid;
+        margin: 0 0;
+        background-color: rgba(0, 255, 255, 0.103);
+        grid-template-columns: 90%;
+        grid-template-rows: auto auto;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    .ultimas_noticias{
+        display: grid;
+        width: 90%;
+        padding: 60px 0;
+    }
+    .h2_ej{
+        display: flex;
+        justify-content: center;
+    }
+    .cards{
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding: 60px 0;
+        gap: 2em;
+    }
+    .card{
+        padding-bottom: 2.5em;
+        display: flex;
+        height: 120px;
+        width: 100%;
+        flex-direction: column;
+        background-color: rgba(247, 214, 176, 0);
+        border: 1px solid black;
+        border-radius: 1em;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .card_img{
+        overflow: hidden;
+        height: 200px;
+        background-image: url(../images/ej1.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 1em 1em 0 0;
+    }
+    .card_cta{
+        margin-left: 2em;
+        background-color: slateblue;
+        color: rgb(219, 23, 23);
+        text-decoration: none;
+        padding: 0.4em 1em;
+        width: 50x;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: auto;
+    }
+    .card_texts{
+        font-size: small;
+        padding: 0.4em;
+    }
+    /* CONTACTO */
+    /* CONTACTOOOO */
+    .conteiner_grid_contacto{
+        display: grid;
+        justify-content: center;
+        grid-template-areas: 
+        'form form'
+        ' map map' ;
+    }
+    .maps{
+        grid-area: map;
+        display: flex;
+        width: 300px;
+        height: 300px;
+        margin: 0;
+        margin-top: 0 80px;
+    }
+    
+    .forms_contactos{
+        grid-area: form;
+        display: flex;
+        margin: 0;
+        margin-bottom: 0 20px;
+    }
+    /* TERMINA CONTACTO*/
+}
+
+    /* TABLET */
+@media only screen and (min-width: 601px) and (max-width: 1199px){
+    *{
+        margin: 0;
+        padding: 0; 
+        box-sizing: content-box;
+    }
+    .header{
+        background-color: darkslateblue;
+        align-items: center;
+        height: auto;
+        padding: 0 5%;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .icon-head{
+        width: 70px;
+        height: 70px;
+        justify-items: auto;
+    }
+    .nav-ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    .li-head{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+    }
+    .anchor-nav{
+        text-decoration: none;
+        font-family: "Comic Sans MS", sans-serif; 
+        color: rgba(241, 87, 151, 0.548);  
+    }
+    /* CONTACTOOOO */
+    .conteiner_grid_contacto{
+        display: grid;
+        justify-content: center;
+        grid-template-areas: 
+        'form form'
+        ' map map' ;
+    }
+    .maps{
+        grid-area: map;
+        display: flex;
+        width: 300px;
+        height: 300px;
+        margin: 0;
+        margin-top: 0 80px;
+    }
+    
+    .forms_contactos{
+        grid-area: form;
+        display: flex;
+        margin: 0;
+        margin-bottom: 0 20px;
+    }
+    /* TERMINA CONTACTO*/
+    /* MAIN */
+    .grid-container{
+        display: grid;
+        margin: 0 0;
+        background-color: rgba(0, 255, 255, 0.103);
+        grid-template-columns: 100px 20% 40% 100px;
+        grid-template-rows: auto auto;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    .ultimas_noticias{
+        display: grid;
+        width: 90%;
+        padding: 60px 0;
+    }
+    .h2_ej{
+        display: flex;
+        justify-content: center;
+    }
+    .cards{
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding: 60px 0;
+        gap: 2em;
+    }
+    .card{
+        padding-bottom: 2.5em;
+        display: flex;
+        height: 120px;
+        width: 100%;
+        flex-direction: column;
+        background-color: rgba(247, 214, 176, 0);
+        border: 1px solid black;
+        border-radius: 1em;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .card_img{
+        overflow: hidden;
+        height: 200px;
+        background-image: url(../images/ej1.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 1em 1em 0 0;
+    }
+    .card_cta{
+        margin-left: 2em;
+        background-color: slateblue;
+        color: rgb(219, 23, 23);
+        text-decoration: none;
+        padding: 0.4em 1em;
+        width: 50x;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: auto;
+    }
+    .card_texts{
+        font-size: small;
+        padding: 0.4em;
+    }
+}
