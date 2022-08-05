@@ -7,6 +7,7 @@
 body{
     font-family: "Roboto", Arial, sans-serif;
     background-color: white;
+    
 }
  /*   HEADER TOTAL   */
 .header{
@@ -25,8 +26,13 @@ body{
 }
 .anchor-nav{
     text-decoration: none;
-    font-family: "Comic Sans MS", sans-serif; 
-    color: rgba(241, 87, 151, 0.548);  
+    font-family: "Comic Sans MS", sans-serif;
+    line-height: 50px;
+    color: rgba(241, 87, 151, 0.548); 
+    display: block;
+    float: left;
+
+    transition: all 1s;
 }
 
 .icon-head{
@@ -359,5 +365,76 @@ body{
     .card_texts{
         font-size: small;
         padding: 0.4em;
+    }
+}
+
+   /* ANIMATION */
+
+.header {
+    animation: entryHeader 1s ease;
+}
+
+.icon-head{
+    animation: entryLi 1s ease 1s forwards;
+    opacity: 0;
+}
+
+#anchor-nav-1{
+    animation:entryHeader 0.5s ease 0.9s forwards;
+    opacity: 0;
+}
+
+#anchor-nav-2{
+    animation:entryHeader 0.5s ease 1s forwards;
+    opacity: 0;
+}
+
+#anchor-nav-3{
+    animation:entryHeader 0.5s ease 1.1s forwards;
+    opacity: 0;
+}
+
+#anchor-nav-4{
+    animation:entryHeader 0.5s ease 1.2s forwards;
+    opacity: 0;
+}
+
+#anchor-nav-5{
+    animation:entryHeader 0.5s ease 1.3s forwards;
+    opacity: 0;
+}
+
+#card1{
+    animation: entryCards 0.5s ease 3s forwards;
+    opacity: 0;
+}
+
+@keyframes entryHeader{
+    from{
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes entryLi {
+    0%{   transform: scale(0);
+        opacity: 0;
+    }
+    65%{ transform: scale(1,2); 
+        opacity: 1;
+        }
+    100%{ transform: scale(1); 
+        opacity: 1;
+        }
+}
+@keyframes entryCards {
+    from { transform: translateY(-1500px);
+            opacity: 0;
+    }
+    to { transform: translateY(0);
+        opacity: 1;
     }
 }
