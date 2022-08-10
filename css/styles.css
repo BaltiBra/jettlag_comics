@@ -22,7 +22,11 @@ body{
 .li-head{
     margin: 40px;
     list-style: none;
-    float: left;
+    float: right;
+}
+.nav-head{
+    display: flex;
+    margin-right: 1px;
 }
 .anchor-nav{
     text-decoration: none;
